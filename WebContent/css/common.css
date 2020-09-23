@@ -1,0 +1,107 @@
+@font-face{
+    font-family: customFont1;
+    src: url(../res/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: customFont2;
+    src: url(../res/fonts/Rowdies/Rowdies-Bold.ttf);
+}
+:root {
+    --navbar-height: 50px
+}
+
+
+
+/*Content*/
+.content{
+   /* margin-top: var(--navbar-height);*/
+}
+
+.panel {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	cursor: default;
+}
+
+.well {
+    position: relative;
+	overflow-y: hidden;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+/*body*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* Remove link default styles*/
+a:link {
+    color: rgb(219, 219, 219);
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(219, 219, 219);
+  }
+  a:hover {
+    color: white;
+  }
+  a:active {
+    color: white;
+  }
+
+
+
+/*Navigation Bar*/
+#navigationBar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.041);
+    width: 100%;
+    height: var(--navbar-height);
+    top: 0px;
+    z-index: 10;
+
+    color: rgb(219, 219, 219);
+    font-size: 16px;
+    font-family: customFont1;
+    transition: 1s all ease;
+}
+
+.navbar-active{
+    background-color: black !important;
+}
+
+#navigationBar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 0px;
+    margin: 8px;
+    align-items: center;
+}
+#navigationBar ul li{
+    transition: all 0.3s ease;
+}
+
+#navigationBar ul li:hover{
+    color: white;
+    font-weight: bold;
+}
+
+#navigationBar ul li:first-child{
+    padding-right: 20vw;
+    padding-left: 20vw;
+    text-decoration: underline;
+    font-size: 24px;
+    font-family: customFont2;
+}
+
+#navigationBar ul li:last-child{
+    padding-right: 20vw;
+}

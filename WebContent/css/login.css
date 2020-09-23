@@ -1,0 +1,48 @@
+#description-wrapper{
+    position: relative;
+}
+
+#description-wrapper img{
+    height:100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(20%);
+}
+
+#description{
+    transform: translate(-60%,-25%);
+    position: absolute;
+    top: 35vh;
+    right: 5%;
+    width: 40%;
+    color: rgb(211, 211, 214);
+    text-align: center;
+    font-family: customFont1;
+    font-size: 18px;
+
+}
+
+.login-form input{
+    padding: 10px;
+    width: 250px;
+    margin: 5px;
+    background-color: whitesmoke;
+
+}
+
+.submit-button{
+    width: 120px !important;
+    border: 2px solid whitesmoke;
+    background-color: rgba(0, 0, 0, 0.431)!important;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px!important;
+    height: 40px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover{
+    color: black;
+    background-color: whitesmoke!important;
+}

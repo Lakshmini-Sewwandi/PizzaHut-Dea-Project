@@ -1,0 +1,158 @@
+@font-face{
+    font-family: customFont3;
+    src: url(../res/fonts/Lobster/Lobster-Regular.ttf);
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+}
+#slideShow {
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+}
+#slider{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    transition: all 1s ease;
+}
+
+#slider img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: -20px;
+    z-index: 2;
+}
+
+.prev,
+.next {
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.prev{
+    background-image: url(../res/images/next_button.svg);
+    transform: rotate(180deg);
+    left: 20px;
+}
+
+.next{
+    background-image: url(../res/images/next_button.svg);
+    right: 20px;
+}
+
+.prev:active{
+    background-size: 20px;
+}
+.next:active{
+    background-size: 20px;
+}
+
+#indicators{
+    position:absolute;
+    bottom:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.indicator{
+    width: 40px;
+    height:3px;
+    margin: 2px;
+    background-color: rgba(189, 189, 189, 0.513);
+    transition: all 1s ease;
+}
+
+
+.indicator-active{
+    background-color: white;
+}
+
+.welcome{
+    position: absolute;
+    color:rgb(231, 231, 231);
+    font-family: customFont3;
+    width: 100%;
+    top: 40%;
+    font-size:25px;
+    line-height: 18px;
+    text-align: center;
+}
+
+#description-wrapper{
+    position: relative;
+}
+
+#description-wrapper img{
+    height:100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#description{
+
+    position: absolute;
+    top: 25vh;
+    right: 5%;
+    width: 40%;
+    color: rgb(211, 211, 214);
+    text-align: center;
+    font-family: customFont1;
+    font-size: 22px;
+
+}
+
+#menu{
+    display: flex;
+}
+
+#menu img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(20%);
+}
+
+.column{
+    position: absolute;
+    transform: translateY(5vh);
+    top: 0px;
+    width: 40%;
+    padding: 5%;
+    color: rgb(255, 255, 255);
+    font-family: customFont1;
+    line-height: 18px;
+}
+
+.column h3{
+    color: rgb(255, 238, 145);
+    font-family: customFont2;
+}
+
+.col1{
+    left: 0px;
+}
+
+.col2{
+    right: 0px;
+}

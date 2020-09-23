@@ -1,0 +1,101 @@
+h1{
+    font-family: customFont2;
+    padding-left: 50px;
+    color: white;
+}
+.promotions{
+    padding: 0px;
+    margin: 0px;
+    color: rgb(42, 39, 39);
+    position: absolute;
+    top: 0px;
+    font-family: customFont1;
+    margin-top: 80px;
+
+}
+
+.panel{
+    background-image: url("../res/images/slide3.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    overflow-y: auto!important;
+}
+
+.pizza-row{
+    padding: 0px;
+    margin: 0px;
+    transform: translateX(5vw);
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#bg-image{
+    margin: 0px;
+    height:100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+.card{
+    background-color: rgba(231, 229, 229, 0.712);
+    width: 200px;
+    height: 270px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    border-width: 5px;
+    margin: 15px;
+    border-color:rgba(255, 255, 255, 0.815);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+.card img{
+    margin: 5px;
+    width: 180px;
+}
+
+.item-name{
+
+    margin: 10px;
+}
+
+.price{
+    margin: 0px;
+}
+
+.login-form input{
+    padding: 10px;
+    width: 250px;
+    margin: 5px;
+    background-color: whitesmoke;
+
+}
+
+.submit-button{
+    width: 120px !important;
+    border: 2px solid whitesmoke;
+    background-color: rgba(0, 0, 0, 0.431)!important;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px!important;
+    height: 40px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover{
+    color: black;
+    background-color: whitesmoke!important;
+}
