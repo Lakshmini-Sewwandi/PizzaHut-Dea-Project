@@ -16,7 +16,7 @@
     <div id="navigationBar">
         <ul>
                     <li><a href="index.jsp">Bruno's Pizzeria</a></li>
-                    <li><a href="promotions.jsp">Promotions</a></li>
+                    <li><a href="promotions">Promotions</a></li>
            	<%Cookie[] cookies = request.getCookies();
 				int check = 0;
 				String displayName = null;
@@ -63,40 +63,6 @@
                 <p><h5>Bruno's Pizzeria was bought to Australia in the early 80s, by an unspired young man named Bruno. Having scored the perfect location, within the heart ow Hawthorn, Bruno set out to bring his Italian heritage to everyone's bellies.</h5><p>
                     <p><h5>The reason you're probably looking at our website right now is because you're looking for dinner. We can gurantee you'll have the biggest smile and happiest belly after taking your first bite of our delicious pizzas.</h5></p>
                     <p><h5>If you're looking to dine-in, we can provide professionalrestaurant quality service. Or if you're looking to binge your favourite TV show on the couch, we can deliver right to your door.</h5></p>
-            </div>
-        </div>
-
-        <!--Menu-->
-        <div class="panel" id="menu-wrapper">
-            <div id="menu">
-                <img src="res/images/home_bg2.jpg">
-                <div class="column col1">
-                    <h3>Margarita</h3>
-                    <h4>Small $10/ Medium $12/ Large $14</h4>
-                    <p>Nothing beats the classics! With a tomato base and mozzarella cheese, sprinkled with the finest italian herbs, you can't say no.</p>
-                    <br>
-                    <h3>Supreme</h3>
-                    <h4>Small $10 / Medium $12 / Large $14</h4>
-                    <p>The supreme leader of pizza (no bias here). Salami, ham, chorizo, mushrooms, onions, capsicums, pineapple, on a tomato base and topped with mozzarella, herbs and garlic. You can't go wrong!</p>
-                    <br>
-                    <h3>Hawaiian</h3>
-                    <h4>Small $10 / Medium $12 / Large $14</h4>
-                    <p>The victim of many debates over pineapple on pizza. The simple, ham and pineapple pizza is still the most refreshing pizza on the market.</p>
-                </div>
-                <div class="column col2">
-                    <h3>Margarita</h3>
-                    <h4>Small $10/ Medium $12/ Large $14</h4>
-                    <p>Nothing beats the classics! With a tomato base and mozzarella cheese, sprinkled with the finest italian herbs, you can't say no.</p>
-                    <br>
-                    <h3>Supreme</h3>
-                    <h4>Small $10 / Medium $12 / Large $14</h4>
-                    <p>The supreme leader of pizza (no bias here). Salami, ham, chorizo, mushrooms, onions, capsicums, pineapple, on a tomato base and topped with mozzarella, herbs and garlic. You can't go wrong!</p>
-                    <br>
-                    <h3>Hawaiian</h3>
-                    <h4>Small $10 / Medium $12 / Large $14</h4>
-                    <p>The victim of many debates over pineapple on pizza. The simple, ham and pineapple pizza is still the most refreshing pizza on the market.</p>
-                
-                </div>
             </div>
         </div>
     </div>
